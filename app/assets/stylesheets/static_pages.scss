@@ -1,6 +1,71 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 h1 {
-	font-size: 40px;
+	font-family: Verdana;
 }
+
+p {
+	font-family: Tahoma;
+}
+
+.welcome {
+	padding-top: 100px;
+}
+
+body {
+  padding-top: 61px;
+}
+
+/*** Nav bar ***/
+
+.nav {
+	z-index: 1;
+}
+
+.nav li {
+	display: inline-block;	
+	height: 100%;
+	margin-right: 40px;
+}
+
+.Home a {
+	text-decoration: none;
+	color: white;
+}
+
+/***Index page***/
+
+#blogspage {
+	text-align: center;
+}
+
+.listing {
+	text-align: center;
+}
+
+/*** Sticky footer ***/
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px; 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  height: 142px; 
+}
+.site-footer {
+  background: #f5f5f5;
+}
+ 

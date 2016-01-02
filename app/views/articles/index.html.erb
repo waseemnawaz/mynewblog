@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="listing">Listing Articles</h1>
+
+<div class="container-fluid" id="blogspage">
+  <div class="row">
+    <% @articles.each do |article| %>
+      <!--div class="col-md-1"-->
+        <h1><%= article.title %></h1>
+        <p><%= article.body %></p>
+        <p><%= link_to 'Show', article %></p>
+        <p><%= link_to 'Edit', edit_article_path(article) %></p>
+        <p><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <!--strong>$ 42</strong-->
+      <!--/div--><!-- /col -->
+    <% end %>
+  </div>
+</div>
+
+
+
+<!--table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <%# @articles.each do |article| %>
+      <tr>
+        <td><%#= article.title %></td>
+        <td><%#= article.body %></td>
+        <td><%#= link_to 'Show', article %></td>
+        <td><%#= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%#= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <%# end %>
+  </tbody>
+</table-->
+
+<br>
+
+<%= link_to 'New Article', new_article_path %>
