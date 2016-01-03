@@ -24,21 +24,21 @@
             <span class="icon-bar"></span>
           </button>
           <div class="Home navbar-brand">
-            <a href="#">Home</a>
+            <%= link_to "Waseem's Blog", articles_path %><!--a href="#">Waseem's Blog</a-->
           </div> <!--end projectName -->
         </div> <!--end navbar-header -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about">About</a></li>
-            <li class="dropdown">
+            <li><%= link_to "About", static_pages_about_path %><!--a href="#about">About</a--></li>
+            <!--li class="dropdown">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">Work <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="#work1">Work1</a></li>
                   <li><a href="#work2">Work2</a></li>
                 </ul>
-              </li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#faq">FAQ</a></li>
+              </li-->
+            <li><%= link_to "Contact", static_pages_contact_path %><!--a href="#contact">Contact</a--></li>
+            <!--li><a href="#faq">FAQ</a></li-->
           </ul>
         </div><!--nav-->
       </div><!--end nav container-->
