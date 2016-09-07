@@ -1,21 +1,12 @@
 <!--p id="notice"><%#= notice %></p-->
 
-<h1 class="listing">Listing Articles</h1>
 
-<div class="container-fluid" id="blogspage">
-  <div class="row">
-    <% @articles.each do |article| %>
-      <!--div class="col-md-1"-->
-        <h1><%= article.title %></h1>
-        <p><%= article.body %></p>
-        <p><%= image_tag(article.image_url, class: "img-responsive") %><%#= article.image_url %></p>
-        <p><%= link_to 'Show', article %></p>
-        <p><%= link_to 'Edit', edit_article_path(article) %></p>
-        <p><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-        <!--strong>$ 42</strong-->
-      <!--/div--><!-- /col -->
-    <% end %>
-  </div>
+
+<div class="container-fluid anchor" id="blogspage">
+  <h1 class="listing">Listing Articles</h1>
+  <!--div class="row"-->
+    <%= render "article" %>
+  <!--/div-->
 </div>
 
 
