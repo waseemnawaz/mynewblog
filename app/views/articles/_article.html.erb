@@ -1,13 +1,14 @@
 <div class="somerender">
 <% @articles.each do |article| %>
       <!--div class="col-md-1"-->
-        <h1 class="indextitle"><%= article.title %></h1>
+        <h1 class="indextitle"><a href="<%= article_path(article) %>"><%= article.title %></a></h1>
         <p><%= image_tag(article.image_url, class: "img-responsive thepic") %><%#= article.image_url %></p>
         <p class="indextext"><%= article.body %></p>
         
-        <p><%= link_to 'Show', article %></p>
+        <!--p><%#= link_to 'Show', article %></p-->
+        <% if signed_in? && current_user.admin? %>
         <p><%= link_to 'Edit', edit_article_path(article) %></p>
-        <p><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+        <p><%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %></p><% end %>
         <!--strong>$ 42</strong-->
       <!--/div--><!-- /col -->
     <% end %>
