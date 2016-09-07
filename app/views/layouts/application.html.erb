@@ -11,7 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
 </head>
-<body>
+<!--body-->
 <body data-spy="scroll" data-target=".navbar">	
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
@@ -29,6 +29,7 @@
         </div> <!--end navbar-header -->
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "My posts", articles_path, class: "home" %></li>
             <li><%= link_to "About", static_pages_about_path %><!--a href="#about">About</a--></li>
             <!--li class="dropdown">
               <a href="#" data-toggle="dropdown" class="dropdown-toggle">Work <b class="caret"></b></a>
@@ -39,15 +40,16 @@
               </li-->
             <li><%= link_to "Contact", static_pages_contact_path %><!--a href="#contact">Contact</a--></li>
             <!--li><a href="#faq">FAQ</a></li-->
+            <li>
+            <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path) %>
+            <% end %>
+            </li>
           </ul>
           <!--ul class="nav pull-right">
-            <li>
-            <%# if user_signed_in? %>
-              <%#= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-            <%# else %>
-              <%#= link_to('Login', new_user_session_path) %>
-            <%# end %>
-            </li>
+            
           </ul-->
         </div><!--nav-->
       </div><!--end nav container-->
@@ -61,20 +63,14 @@
 <% end %>
 <!--p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p-->
+        
 <%= yield %>
 <div class="page-wrap">
 </div><!--page-wrap-->
 <footer class="site-footer">
-  I'm the Sticky Footer.
-  <ul class="nav pull-right">
-            <li>
-            <% if user_signed_in? %>
-              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
-            <% else %>
-              <%= link_to('Login', new_user_session_path) %>
-            <% end %>
-            </li>
-          </ul>
+  <div class="copyright">
+    &copy; Waseem's blog 2016
+  </div>
 </footer>
 <!--footer>
   &copy; 2015 Bike Berlin
