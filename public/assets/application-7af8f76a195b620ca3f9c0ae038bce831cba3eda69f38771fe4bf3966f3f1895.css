@@ -1,0 +1,368 @@
+/*body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}*/
+/*body {
+  padding-top: 61px;
+}*/
+/*** Nav bar ***/
+/*.nav {
+	z-index: 1;
+}
+
+.nav li {
+	display: inline-block;	
+	height: 100%;
+	margin-right: 40px;
+}
+
+.Home a {
+	text-decoration: none;
+	color: white;
+}*/
+/*** Navigation bar typography ***/
+/* line 29, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li > a:hover {
+  /*color: #436EEE;*/
+  color: #FFF68F;
+}
+
+/* line 34, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse {
+  /*background-color: #FFFFFF;*/
+  background-color: #26A5FF;
+}
+
+/* line 39, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse .navbar-nav > li > a {
+  color: black;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+/* line 45, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.navbar-inverse {
+  font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* line 51, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.navbar-fixed-top {
+  border: none;
+}
+
+/* line 55, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+#bberl a {
+  font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+  color: black;
+  text-decoration: none;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+  font-size: 1.5em;
+  padding: 0 15px;
+}
+
+/* line 65, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+#bberl a:hover {
+  /*color: #436EEE;*/
+  color: #FFF68F;
+  transition: color 600ms;
+  -webkit-transition: color 600ms;
+}
+
+/* line 72, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.navbar-toggle {
+  background-color: black;
+}
+
+/*** Navigation bar layout ***/
+/* line 78, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.nav {
+  z-index: 1;
+}
+
+/*.anchor {
+	padding-top: 80px;
+}*/
+/* line 86, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.anchor {
+  padding-top: 10em;
+}
+
+/* line 90, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.navbar-brand {
+  margin-top: 10px;
+}
+
+/* line 94, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+body {
+  position: relative;
+}
+
+/* line 98, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.navbar-right {
+  margin-top: 10px;
+}
+
+/* line 102, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.nav {
+  margin-bottom: 30px;
+}
+
+/*** Static pages Index page***/
+/* line 108, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+body {
+  background-color: #FFF68F;
+}
+
+/* line 112, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.indexpage h1, p {
+  text-align: center;
+}
+
+/* line 116, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.indexpage h1 {
+  font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+  font-size: 2.5em;
+  color: #26A5FF;
+}
+
+/* line 122, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.indexpage p {
+  font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+  font-size: 1.5em;
+}
+
+/* line 127, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.firstpics {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 132, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.indexpage {
+  padding-bottom: 5em;
+}
+
+/*body {
+	background-image: image_url("clouds.jpeg");
+	background-size: cover;
+}*/
+/*** article index page ***/
+/*#blogspage h1 {
+	text-align: center;
+}*/
+/* line 147, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.listing {
+  text-align: center;
+}
+
+/* line 151, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+#blogspage {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 156, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.indextitle {
+  text-align: center;
+}
+
+/* line 160, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.listing {
+  font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+  font-size: 4em;
+  color: #26A5FF;
+}
+
+/* line 166, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.indextitle {
+  font-size: 2.5em;
+  font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: #26A5FF;
+  text-decoration: none;
+}
+
+/* line 174, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.indextitle a {
+  text-decoration: none;
+  color: #26A5FF;
+}
+
+/* line 179, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.indextext {
+  text-align: left;
+}
+
+/* line 183, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.indextext {
+  font-size: 1.5em;
+  font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+}
+
+/**** Article show page ****/
+/* line 190, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+#showz {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 195, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.titles {
+  font-size: 2.5em;
+  font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: #26A5FF;
+}
+
+/* line 202, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.titles {
+  text-align: center;
+}
+
+/* line 206, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.articlebody {
+  font-size: 1.5em;
+  font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+}
+
+/*.somerender {
+	background-color: #A200FF;
+}*/
+/* line 215, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.somerender {
+  padding-top: 2em;
+}
+
+/**** _new_comment ***/
+/* line 221, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.commentes {
+  text-align: center;
+}
+
+/*** Sticky footer ***/
+/* line 227, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+* {
+  margin: 0;
+}
+
+/* line 230, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 233, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -142px;
+}
+
+/* line 238, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+/* line 242, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.site-footer, .page-wrap:after {
+  height: 142px;
+}
+
+/* line 245, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.site-footer {
+  background: #26A5FF;
+}
+
+/* line 249, /Users/waseemnawaz/Desktop/myblog/app/assets/stylesheets/static_pages.scss */
+.copyright {
+  text-align: center;
+  padding-top: 5em;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
