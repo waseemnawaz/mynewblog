@@ -2,7 +2,7 @@
 <% @articles.each do |article| %>
       <!--div class="col-md-1"-->
         <h1 class="indextitle"><a href="<%= article_path(article) %>"><%= article.title %></a></h1>
-        <p><%#= image_tag(article.image_url, class: "img-responsive thepic") %><%#= article.image_url %></p>
+        <p><%= image_tag(article.image_url, class: "img-responsive thepic") %><%#= article.image_url %></p>
         <p class="indextext"><%= article.body %></p>
         
         <!--p><%#= link_to 'Show', article %></p-->
