@@ -9,7 +9,7 @@
 <p class="date"><%= @article.created_at.strftime("%B, %d, %Y") %></p>
 
 <h5 class="articlebody">
-  <%= @article.body %>
+  <%= simple_format @article.body %>
 </h5>
 <p>
   <%= image_tag @article.image_url, class: "img-responsive showpic" %>
