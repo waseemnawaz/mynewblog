@@ -175,7 +175,7 @@ body {
 	color: #26A5FF;
 }
 
-.indextext {
+.indextext, p {
 	text-align: left;
 }
 
@@ -205,6 +205,10 @@ body {
 .articlebody {
 	font-size: 1.5em;
 	font-family: Trebuchet MS, Arial Narrow, Lucida Sans Typewriter, Verdana, sans-serif;
+}
+
+.articlebody p {
+	text-align: left;
 }
 
 /*.somerender {
