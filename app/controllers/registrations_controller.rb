@@ -9,7 +9,8 @@ class RegistrationsController < Devise::RegistrationsController
       if user_signed_in?
         redirect_to root_path
       else
-        redirect_to new_user_session_path
+        #redirect_to new_user_session_path
+        redirect_to static_pages_index_path
       end
     end  
   end
