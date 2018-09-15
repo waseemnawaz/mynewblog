@@ -28,7 +28,7 @@ $.fn.euCookieLawPopup = (function() {
 	///////////////////////////////////////////////////////////////////////////////////////////////
 	// PARAMETERS (MODIFY THIS PART) //////////////////////////////////////////////////////////////
 	_self.params = {
-		cookiePolicyUrl : 'https://www.youronlinechoices.eu/',
+		cookiePolicyUrl : 'http://www.bbc.com/',
 		popupPosition : 'top',
 		colorStyle : 'default',
 		compactStyle : false,
